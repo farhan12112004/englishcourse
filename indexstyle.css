@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --pTextColor:#232e35;
+    --sTextColor:#656d72;
+
+    --bgColor:#f1f1f1;
+    
+    --pBgColor:#fff;
+    --sBgColor:#fbfbfb;
+    --tBgColor:#f5f3fe;
+
+    --pIconColor:#7e74f1;
+    --pIconColorHover:#5d51e8;
+
+    --sPaddig: 5rem 0;
+    
+    --ItemBorderRadius: 0.7rem;
+
+
+}
+*{
+    margin: 0;
+    padding: 0; 
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--pBgColor);
+}
+h1,h2,h3,h4,h5,h6, strong{
+    color: var(--pTextColor);
+}
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+p, label, input, textarea,li{
+    color: var(--pTextColor);
+}
+span{
+    color: #5d51e8;
+}
+a{
+    text-decoration: none;
+}
+.main-container{
+    margin: 0 auto; 
+    padding: 0 2rem;
+}
+@media screen and (max-width:1024px){
+    main-container{
+        width: 90%;
+        height: 90%;
+    }
+}
+/* Title */
+.section-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: var(--sTextColor);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: var(--sTextColor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+/* Logo dan Navigasi */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.logo a{
+    color: var(--pTextColor);
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    color: var(--pTextColor);
+}
+nav ul li a:hover{
+    color: var(--pIconColorHover);
+    transition: 0.3s;
+}
+
+/* Burger */
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: #ededed;
+    margin: 7px;
+    transition: all.3s;
+    z-index: 99;
+}
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 15px;
+    right: 30px;
+}
+/* Hero */
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.hero-name{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hero-name span{
+    color: var(--pIconColor);
+}
+.hero-right img{
+    padding-bottom: 200px;
+    width: 80%;
+}
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
+/* Services */
+#services{
+    height: 720px;
+    background-color: var(--sBgColor);
+    padding: var(--sPaddig);
+}
+.services-main-container .pre-title{
+    margin: 0 auto;
+
+}
+.services-main-container span{
+    color: var(--pIconColorHover);
+}
+.services-title{
+    text-align: center;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service{
+    width: 400px;
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border:1px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+.service h3{
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+.service button{
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #232e35;
+    
+}
+.service button a{
+    color: whitesmoke;
+
+}
+.service button a:hover{
+    color: var(--pIconColorHover);
+    transition: 0.3s;
+}
+
+.service-icon{
+    background: var(--pTextColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+.service-icon{
+    fill: var(--pBgColor);
+}
+.service-icon img{
+    width: 300px;
+}
+/* About */
+#about{
+    margin-left: 20px;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: var(--sPaddig);
+    background:var(--pBgColor);
+}
+.about-img img{
+    width: 30vw;
+    border-radius: 10px;
+}
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.about-content span{
+    color: var(--pIconColor);
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2rem;
+}
+.about-content p{
+    font-size: 1.05rem;
+    margin: 1rem 0 0.3rem;
+}
+
+/* Contact */
+#contact{
+    background: var(--sBgColor);
+    padding: var(--sPaddig);
+}
+.contact-heading{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.contact-container span{
+    color: var(--pIconColorHover);
+}
+.contact-container h3{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.contact .row{
+    display: flex;
+    margin-top: 2rem;
+    background-color: var(--pBgColor);
+    flex-wrap: wrap;
+    border-radius: 5%;
+}
+
+.contact .row .maps{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+
+}
+.contact .row form .input-group{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--pBgColor);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+}
+.contact .row form .input-group input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.05rem;
+    background: none;
+}
+
+.contact .row form .btn{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.05rem;
+    color: var(--bgColor);
+    background: var(--pTextColor);
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* Contact Selesai */
+
+/* Footer Section */
+footer{
+    padding: 2rem 0;
+    background-color: var(--pBgColor);
+    text-align: center;
+}
+.footer-icons{
+    margin-bottom: 0.5rem;
+}
+.footer-icons a{
+    margin: 0 1rem;
+    list-style: none;
+    color: var(--pTextColor);
+}
+.footer-icons a:hover{
+    color: var(--pIconColorHover);
+}
