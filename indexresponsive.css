@@ -36,7 +36,7 @@
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
     flex-direction: column;
-    background-color: #081b29c9;
+    background-color: whitesmoke;
     border-left: 1px solid var(--borderColor);
     z-index: 9;
     transform: translateX(100%);
@@ -72,20 +72,23 @@
   /* Hero Section */
   #hero {
     grid-template-columns: 1fr;
-    height: fit-content;
+    /* height: fit-content; */
   }
 
   .hero-right {
     order: -1;
+    padding-top: 5rem;
+    padding-bottom: 0px;
   }
 
   .hero-right img {
-    width: 70%;
+    width: 90%;
   }
 
   .hero-left {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 25rem;
+    margin-top: -10rem;
   }
 
   .hero-left .pre-title {

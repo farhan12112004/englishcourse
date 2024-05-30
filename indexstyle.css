@@ -195,11 +195,12 @@ nav ul li a:hover{
     background-color: #232e35;
     
 }
-.service button a{
+.service a button{
     color: whitesmoke;
+    cursor: pointer;
 
 }
-.service button a:hover{
+.service a button:hover{
     color: var(--pIconColorHover);
     transition: 0.3s;
 }
