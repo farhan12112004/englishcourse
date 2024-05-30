@@ -8,24 +8,6 @@
     }
   }
   @media screen and (max-width: 825px) {
-    /* Burger */
-    .burger {
-      display: block;
-      cursor: pointer;
-    }
-}
-    .toggle-burger .line-1 {
-      transform: rotate(-45deg) translate(-5px, 7px);
-    }
-  
-    .toggle-burger .line-2 {
-      opacity: 0;
-    }
-  
-    .toggle-burger .line-3 {
-      transform: rotate(45deg) translate(-5px, -7px);
-    }
-  
     /* Navigation */
     nav {
       position: fixed;
@@ -96,10 +78,14 @@
       font-weight: 500;
       /* margin-bottom: 0.5rem; */
     }
-    .table-a{
-      width: 450px;
-      font-size: 10px;
-    }
+  
     footer {
         padding: 2rem 0;
+      }
+    }
+      @media screen and (max-width: 500px){
+        .table-a{
+      width: 450px;
+      font-size: 10px;
+        }
       }

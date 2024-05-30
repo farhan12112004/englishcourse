@@ -144,9 +144,6 @@ nav ul li a:hover{
     width: 1000px;
     text-align: center;
 }
-.table-a{
-    width: 1000px;
-}
 footer{
     padding: 2rem 0;
     background-color: var(--pBgColor);
